@@ -268,7 +268,7 @@ def get_input_blob_shape(defFile):
 	
 
 class MyNet:
-	def __init__(self, defFile, modelFile=None, isGPU=True, testMode=True, deviceId=None):
+	def __init__(self, defFile, modelFile=None, isGPU=False, testMode=True, deviceId=None):
 		self.defFile_   = defFile
 		self.modelFile_ = modelFile
 		self.testMode_  = testMode
@@ -291,7 +291,7 @@ class MyNet:
 		self.batchSz   = self.get_batchsz()
 
 
-	def set_mode(self, isGPU=True, deviceId=None):
+	def set_mode(self, isGPU=False, deviceId=None):
 		if isGPU:
 			caffe.set_mode_gpu()
 		else:
