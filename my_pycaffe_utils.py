@@ -1484,7 +1484,7 @@ def make_solver(**kwargs):
 						 ('base_lr', 0.01), ('momentum', 0.9), ('weight_decay', 0.0005),
 						 ('gamma', 0.1), ('stepsize', 100000), ('lr_policy', '"step"'),
 						 ('display', 20),('max_iter', 310000), ('snapshot', 10000),
-						 ('snapshot_prefix', '""'), ('solver_mode', 'GPU'), ('device_id', 1),
+						 ('snapshot_prefix', '""'), ('solver_mode', 'CPU'), ('device_id', 1),
 						 ('debug_info', 'false'), ('clip_gradients', -1), ('iter_size', 1),
 						 ('regularization_type', '"L2"'), ('random_seed', -1)])
 
