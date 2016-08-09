@@ -294,6 +294,7 @@ class MyNet:
 	def set_mode(self, isGPU=False, deviceId=None):
 		if isGPU:
 			caffe.set_mode_gpu()
+			print "GPU 1"
 		else:
 			caffe.set_mode_cpu()
 		if deviceId is not None:
