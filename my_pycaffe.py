@@ -779,6 +779,7 @@ class MySolver(object):
 			print ('GPU Mode, setting device %d' % device)
 			caffe.set_device(device)
 			caffe.set_mode_gpu()
+			print "GPU !!! "
 		else:
 			print ('CPU Mode')
 			caffe.set_mode_cpu()
